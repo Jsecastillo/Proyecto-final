@@ -1,0 +1,4 @@
+// Example of simple JavaScript interaction (currently empty)
+console.log("Site.js loaded successfully!");
+
+// Additional custom JavaScript can be added as needed

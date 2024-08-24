@@ -1,0 +1,18 @@
+@page
+@model PortfolioRazorPages.Pages.SkillsModel
+@{
+    ViewData["Title"] = "Habilidades";
+}
+
+<div class="container">
+    <h2>Mis Habilidades</h2>
+
+    <ul>
+        @foreach (var skill in Model.Skills)
+        {
+            <li>
+                <strong>@skill.Name:</strong> @skill.Level%
+            </li>
+        }
+    </ul>
+</div>

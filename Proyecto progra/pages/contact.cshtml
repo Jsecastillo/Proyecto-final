@@ -1,0 +1,38 @@
+@page
+@model PortfolioRazorPages.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<div class="container">
+    <h2>Contacto</h2>
+
+    <form method="post">
+        <div>
+            <label asp-for="ContactForm.CompanyName"></label>
+            <input asp-for="ContactForm.CompanyName" />
+            <span asp-validation-for="ContactForm.CompanyName"></span>
+        </div>
+        <div>
+            <label asp-for="ContactForm.ContactName"></label>
+            <input asp-for="ContactForm.ContactName" />
+            <span asp-validation-for="ContactForm.ContactName"></span>
+        </div>
+        <div>
+            <label asp-for="ContactForm.Email"></label>
+            <input asp-for="ContactForm.Email" />
+            <span asp-validation-for="ContactForm.Email"></span>
+        </div>
+        <div>
+            <label asp-for="ContactForm.Phone"></label>
+            <input asp-for="ContactForm.Phone" />
+            <span asp-validation-for="ContactForm.Phone"></span>
+        </div>
+        <div>
+            <label asp-for="ContactForm.Message"></label>
+            <textarea asp-for="ContactForm.Message"></textarea>
+            <span asp-validation-for="ContactForm.Message"></span>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
